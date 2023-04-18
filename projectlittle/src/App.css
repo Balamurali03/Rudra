@@ -1,0 +1,286 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav
+{
+  /* background: linear-gradient(55deg,rgb(75, 243, 181),rgb(76, 142, 248)); */
+  background-color: #85586F;
+  width: 800px;
+  height: 60px;
+  top: 0px;
+  left: 232px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ position: fixed;
+ z-index: 1;
+}
+.pic
+{
+height: 64px;
+width: 150px;
+position: relative;
+cursor: pointer;
+}
+.title 
+{
+    position: absolute;
+    left: 28px;
+    top: 15px;
+    font-family: Informal Roman;
+ font-size: larger; 
+ font-weight: bolder;
+ cursor: pointer;
+ color: rgb(255, 77, 0);
+ animation: glow 1.5s linear infinite;
+}
+@keyframes glow {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}
+.search 
+{
+    margin-right: 20px;
+}
+.sbox 
+{
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  border: solid transparent;
+}
+.sbtn 
+{
+  
+    margin-left: -160px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid transparent;
+}
+
+.outline{
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 350px 350px;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.food{
+ 
+  background-color: #DFD3C3;
+  text-align: center  ;
+  width: 300px;
+  height: 420px;
+  margin: 10px;
+  padding: 8px;
+  border: solid rgba(0, 0, 0, 0.425) 1px;
+  border-radius: 10px;
+  transition: 0.2s;
+  
+}
+.box
+{
+  text-decoration: none;
+  color: #85586F;
+  width: 300px;
+  height: 420px;
+}
+
+.food :hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px black;
+  transition: 0.2s;
+ font-size: larger;
+ font-weight: bolder;
+ color: rgb(134, 24, 230);
+}
+.food img{
+  border-radius: 5px;
+  width: 250px;
+  height: 300px;
+}
+.home
+{
+ margin-top: 100px;
+ margin-left: 232px;
+  background-color: #D0B8A8;
+  width: 800px;
+  height: auto;
+ 
+   overflow: hidden; 
+ 
+}
+.home h1
+{
+  
+  text-align: center;
+
+}
+body 
+{
+  background-color: #F8EDE3;
+}
+
+.detailpic
+{
+  margin-left: 250px;
+  height: 250px;
+  width: 300px;
+}
+
+.details .detailpic:hover
+{
+ border: 5px solid #85586F;
+ padding: 10px;
+ cursor: pointer;
+}
+
+
+
+
+
+ .loader {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #F8EDE3;
+} 
+
+.bar {
+  position: relative;
+  height: 2px;
+  width: 500px;
+  margin: 0 auto;
+  background: #85586F;
+  margin-top: 150px;
+}
+
+.circle {
+  position: absolute;
+  top: -30px;
+  margin-left: -30px;
+  height: 60px;
+  width: 60px;
+  left: 0;
+  background: #85586F;
+  border-radius: 30%;
+  animation: move 2.5s infinite;
+}
+
+.word {
+  position: absolute;
+  top: -33px;
+  right: -85px;
+  text-transform: uppercase;
+  color: #F8EDE3;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@keyframes move {
+  0% {left: 0;}
+  50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  100% {right: 100%;}
+} 
+
+
+.synop 
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 3px solid #85586F;
+  padding: 5px;
+  color: blueviolet;
+  background-color: #DFD3C3;
+  font-family: Monotype Corsiva;
+  font-size: x-large; 
+  font-weight: bolder;
+  
+}
+.synop h1
+{
+  font-family: Algerian;
+  font-size: x-large; 
+  font-weight: bolder;
+}
+
+.producers 
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #85586F;
+  padding: 5px;
+  color: darksalmon;
+  background-color: #DFD3C3;
+  cursor: pointer;
+  text-align: center;
+  font-family: Algerian;
+  font-size: larger; 
+  font-weight: bolder;
+  
+  overflow-y: hidden;
+  overflow-x: hidden; 
+}
+.producers:hover
+{
+  overflow: scroll;
+}
+.year 
+{
+ text-align: center;
+ color: #85586F;
+ 
+}
+.name 
+{
+  color: #85586F;
+}
+.name:hover 
+{
+  cursor: pointer;
+  color: darkgoldenrod;
+}
+.moredetail 
+{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #85586F;
+  padding: 5px;
+  color: rgb(195, 55, 8);
+  background-color: #DFD3C3;
+  cursor: pointer;
+  text-align: center;
+  font-family: Algerian;
+  font-size: larger; 
+  font-weight: bolder;
+  
+}
+.anch 
+{
+  text-decoration: none;
+  color: darksalmon;
+
+}
+.anch:visited
+{
+  color: cadetblue;
+}
+.ser 
+{
+  font-size: x-large;
+  font-weight: bolder;
+ color:#85586F ; 
+}
