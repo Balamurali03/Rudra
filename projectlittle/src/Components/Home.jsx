@@ -15,7 +15,7 @@ function Home()
            let data= fetch("https://api.jikan.moe/v4/anime")
            data.then((response)=>
             {
-               if(response.ok==true)
+               if(response.ok===true)
                {
                  //let {data}=response;
                   return response.json();
@@ -28,7 +28,7 @@ function Home()
                })
             .then(({data})=>{setAnime(data);console.log(data);setPending(false)})
             .catch((err)=>{
-               if(err.message=="Failed to fetch")
+               if(err.message==="Failed to fetch")
                {
                   
                   setError("Due to network issue unable to connect");setPending(false)

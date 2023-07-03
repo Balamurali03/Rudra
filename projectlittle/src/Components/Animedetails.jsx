@@ -16,7 +16,7 @@ function Animedetails()
            let data= fetch("https://api.jikan.moe/v4/anime/"+id)
            data.then((response)=>
             {
-               if(response.ok==true)
+               if(response.ok===true)
                {
                  //let {data}=response;
                   return response.json();
@@ -29,7 +29,7 @@ function Animedetails()
                })
             .then(({data})=>{setAnime(data);console.log(data);setPending(false)})
             .catch((err)=>{
-               if(err.message=="Failed to fetch")
+               if(err.message==="Failed to fetch")
                {
                   
                   setError("Due to network issue unable to connect");setPending(false)
@@ -41,7 +41,7 @@ function Animedetails()
                })
         },3000)
         
-    },[])
+    },[id])
 
 
 
@@ -82,7 +82,7 @@ function Animedetails()
                         <br />
                         <a href={element.url} className="anch"><h3>{element.url}</h3></a>
                         <br />
-                        <span><iframe src={anime.trailer.embed_url} frameborder="5"></iframe> </span>
+                        <span><iframe src={anime.trailer.embed_url} title="Animea trailer " frameborder="5"></iframe> </span>
                         <br />
                         </>
                         
